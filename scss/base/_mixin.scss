@@ -1,0 +1,13 @@
+
+@mixin cositas ($bg-color , $margin , $padding) { 
+    background-color: $bg-color;
+    margin: $margin;
+    padding: $padding;
+}
+
+$colores:
+#8dd6ce,
+#c2cfd8,
+#3a555f;
+
+    

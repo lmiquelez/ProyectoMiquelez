@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap'); 
+@import "./base/discografia";
+@import "./base/fechas";
+@import "./base/descargas";
+@import "./base/contacto";
+@import "./base/mixin.scss";
+
+%contenedor {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    padding: 20px; 
+}
+.menu-container {
+    @extend %contenedor; }
+
+header{
+    background-color: nth($colores, 1 );
+    position: static;
+    display: flex;
+    text-decoration: none;
+       
+        nav {
+        ul {
+         display: inline;
+         display: flex;
+         justify-content: end;
+
+        }   li {
+            text-decoration: none;
+            display: inline;
+            list-style: lower-roman;
+            padding: 10px 40px;
+                a {
+        color: #3a555f ;
+                    }
+ 
+                }      
+            }
+
+            .nav-animation:hover {
+                transform: scale(1.2);
+                transition: all 1s;
+    
+    }
+    
+    .logo-animation:hover {
+        transform: scale(1.2);
+                transition: all 1.5s;
+     }
+    
+}
+
+section {
+    text-align: center;
+}
+
+
+footer {
+    background-color: #8dd6ce; 
+    display: flex;
+    
+    
+
+    div {
+        a {
+            margin: 5px;
+        }
+        div {
+            h4 {
+                margin-top: 8px;
+    margin-bottom: 15;
+            }
+        }
+
+    }
+    .logo-animation:hover {
+        transform: scale(1.2);
+                transition: all 1.5s;
+     }
+      }
+
+      .pie {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+         }
+    .seguinos {
+            height: 40px;  
+        }
+        
+    .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+/*Grid de la seccion noticias*/
+      .grid-container {
+        display: grid;
+        
+    
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+         }
+    
+    
+    .grid-item {
+        @include cositas(#c2cfd8,10px, 5px  )
+        
+        
+    }

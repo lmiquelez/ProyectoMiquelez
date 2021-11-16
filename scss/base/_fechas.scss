@@ -1,0 +1,36 @@
+/*Grid de la sesion Fechas*/
+
+.grid-container-fechas {
+	display: grid;
+	grid-template-columns: 10% 40% 40% 10%;
+	grid-template-rows: 5% 45% 30% 20%;
+    margin-bottom: 4em;
+    text-align: center;
+	
+}
+.grid-item-fechas:nth-child(1) {
+    grid-row-start: 2;
+	grid-row-end: 2;
+    grid-column-start: 2;
+	grid-column-end: 4;
+    
+
+}
+.grid-item-fechas:nth-child(2) {
+    grid-row-start: 3;
+	grid-row-end: 3;
+    grid-column-start: 2;
+	grid-column-end: 3;
+
+}
+.grid-item-fechas:nth-child(3) {
+    grid-row-start: 3;
+	grid-row-end: 3;
+    grid-column-start: 3;
+	grid-column-end: 4;
+
+}
+
+h2 {
+    text-align: center;
+}
