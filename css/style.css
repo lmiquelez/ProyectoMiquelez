@@ -87,6 +87,7 @@ header {
   position: static;
   display: flex;
   text-decoration: none;
+  
 }
 header nav ul {
   display: inline;

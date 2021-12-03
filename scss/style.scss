@@ -17,12 +17,14 @@
 }
 .menu-container {
     @extend %contenedor; }
-
+   
+   
 header{
     background-color: nth($colores, 1 );
     position: static;
     display: flex;
     text-decoration: none;
+   
        
         nav {
         ul {
