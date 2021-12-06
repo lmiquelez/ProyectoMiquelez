@@ -1,0 +1,2 @@
+No se como centrar el carrousel a la pagina, no me deja
+tampoco el background de la seccion noticias
