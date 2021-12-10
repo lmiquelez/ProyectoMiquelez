@@ -10,13 +10,7 @@
 @import "./base/contacto";
 @import "./base/mixin.scss";
 
-%contenedor {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    padding: 20px; 
-}
-.menu-container {
-    @extend %contenedor; }
+
    
    
 header{
@@ -24,39 +18,24 @@ header{
     position: static;
     display: flex;
     text-decoration: none;
-   
-       
-        nav {
-        ul {
-         display: inline;
-         display: flex;
-         justify-content: end;
-
-        }   li {
-            text-decoration: none;
-            display: inline;
-            list-style: lower-roman;
-            padding: 10px 40px;
-                a {
-        color: #3a555f ;
-                    }
- 
-                }      
-            }
-
-            .nav-animation:hover {
-                transform: scale(1.2);
-                transition: all 1s;
-                a{  color: #3a555f;}
-    
     }
-    
+
     .logo-animation:hover {
-        transform: scale(1.2);
-                transition: all 1.5s;
-     }
-    
-}
+      transform: scale(1.2);
+              transition: all 1.5s;
+   }
+
+   .barra-nav:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+    a{  color: #3a555f;}
+
+      }
+
+  .botonera {
+    padding-left: 20em;
+
+  }
 
 section {
     text-align: center;
@@ -103,24 +82,8 @@ footer {
             justify-content: center;
         }
 
-/*Grid de la seccion noticias*/
-      .grid-container {
-        display: grid;
-        
+
     
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-         }
-    
-    
-    .grid-item {
-        @include cositas(#c2cfd8,10px, 5px  )
-       
-       
-    
-        
-    }
 
 
 
@@ -131,10 +94,16 @@ footer {
     }
  }
 
-.change {
-    &:hover {
-        background-color: #3a555f;
-    }
+.noticias {
+  background-color: nth($colores, 1 );
+  margin: 20px;
+  c
+  &:hover{
+    background-color: black;
+  }
+  }
+.container {
+  margin: auto;
 }
 
 .carru {
@@ -208,3 +177,6 @@ form {
        entre las etiquetas y sus campos de texto */
     margin-left: .5em;
   }
+
+  
+

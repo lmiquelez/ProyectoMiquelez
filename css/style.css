@@ -11,10 +11,7 @@
   padding: 0;
   text-decoration: none;
 }
-#carouselExampleControls{
-  width: 50%;
-  margin: auto;
-}
+
 h1 {
   text-align: center;
   padding-bottom: 40px;
@@ -80,40 +77,28 @@ h2 {
   padding-bottom: 35px;
 }
 
-.menu-container {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  padding: 20px;
-}
-
 header {
   background-color: #8dd6ce;
   position: static;
   display: flex;
   text-decoration: none;
 }
-header nav ul {
-  display: inline;
-  display: flex;
-  justify-content: end;
-}
-header nav li {
-  text-decoration: none;
-  display: inline;
-  list-style: lower-roman;
-  padding: 10px 40px;
-}
-header nav li a {
-  color: #3a555f;
-}
-header .nav-animation:hover {
-  transform: scale(1.2);
-  transition: all 1s;
 
-}
-header .logo-animation:hover {
+.logo-animation:hover {
   transform: scale(1.2);
   transition: all 1.5s;
+}
+
+.barra-nav:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+.barra-nav:hover a {
+  color: #3a555f;
+}
+
+.botonera {
+  padding-left: 20em;
 }
 
 section {
@@ -151,33 +136,27 @@ footer .logo-animation:hover {
   justify-content: center;
 }
 
-/*Grid de la seccion noticias*/
-.grid-container {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.grid-item {
-  background-color: #c2cfd8;
-  margin: 10px;
-  padding: 5px;
-}
-
 h2:hover {
   transform: scale(1.2);
   transition: all 1.5s;
 }
 
-.change:hover {
-  background-color: #3a555f;
+.noticias {
+  background-color: #8dd6ce;
+  margin: 20px;
+}
+c .noticias:hover {
+  background-color: black;
+}
+
+.container {
+  margin: auto;
 }
 
 .carru {
-  /* width: 40rem;
+  width: 40rem;
   display: flex;
-  justify-content: center; */
+  justify-content: center;
 }
 
 form {
