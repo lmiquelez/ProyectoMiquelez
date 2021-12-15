@@ -97,17 +97,33 @@ header {
   color: #3a555f;
 }
 
+.nav-item {
+  padding-left: 3.5rem;
+}
+
 .botonera {
-  padding-left: 20em;
+  padding-left: 15%;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 60%;
+  margin-bottom: 0;
+  list-style: none;
 }
 
 section {
   text-align: center;
+  padding-left: 2.5rem;
 }
 
 footer {
   background-color: #8dd6ce;
   display: flex;
+}
+footer section {
+  margin: auto;
 }
 footer div a {
   margin: 5px;
@@ -119,11 +135,6 @@ footer div div h4 {
 footer .logo-animation:hover {
   transform: scale(1.2);
   transition: all 1.5s;
-}
-
-.pie {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .seguinos {
@@ -139,6 +150,19 @@ footer .logo-animation:hover {
 h2:hover {
   transform: scale(1.2);
   transition: all 1.5s;
+}
+
+h4 {
+  text-align: right;
+}
+
+h5 {
+  text-align: center;
+}
+
+h6 {
+  text-align: right;
+  margin-right: 2em;
 }
 
 .noticias {
@@ -221,6 +245,31 @@ button {
   /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
      entre las etiquetas y sus campos de texto */
   margin-left: 0.5em;
+}
+
+.carru {
+  margin: auto;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.formulario {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+svg {
+  color: #3a555f;
+  width: 3em;
+}
+svg:hover {
+  transform: scale(2);
+  transition: all 1s;
+}
+
+iframe {
+  margin-bottom: 4rem;
+  margin-top: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

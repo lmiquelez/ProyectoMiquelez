@@ -11,7 +11,7 @@
 @import "./base/mixin.scss";
 
 
-   
+
    
 header{
     background-color: nth($colores, 1 );
@@ -32,21 +32,36 @@ header{
 
       }
 
-  .botonera {
-    padding-left: 20em;
+ .nav-item {
+   padding-left: 3.5rem;
+ }
 
-  }
+   .botonera {
+     padding-left: 15%;
+   }
+
+   .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60%;
+    margin-bottom: 0;
+    list-style: none;
+}
 
 section {
     text-align: center;
+    padding-left: 2.5rem;
 }
+
 
 
 footer {
     background-color: #8dd6ce; 
     display: flex;
     
-    
+    section {
+      margin: auto;
+    }
 
     div {
         a {
@@ -68,14 +83,12 @@ footer {
      }
       }
 
-      .pie {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr; 
-         }
     .seguinos {
             height: 40px;  
         }
-        
+     
+     
+           
     .logo {
             display: flex;
             align-items: center;
@@ -94,6 +107,17 @@ footer {
     }
  }
 
+ h4 {
+   text-align: right;
+ 
+ }
+h5 {
+  text-align: center;
+}
+h6 {
+  text-align: right;
+  margin-right: 2em; ;
+}
 .noticias {
   background-color: nth($colores, 1 );
   margin: 20px;
@@ -114,8 +138,9 @@ footer {
 
 form {
     /* Centrar el formulario en la página */
-    margin: 0 auto;
+     margin: 0 auto;
     width: 400px;
+    
     /* Esquema del formulario */
     padding: 1em;
     border: 1px solid #CCC;
@@ -180,3 +205,28 @@ form {
 
   
 
+.carru {
+  margin: auto ;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.formulario {
+  margin-top: 35px;
+  margin-bottom: 35px;
+ 
+}
+
+svg {
+  color: #3a555f;
+  width: 3em;
+  &:hover {
+    transform: scale(2);
+    transition: all 1s;
+}
+ }
+
+ iframe {
+   margin-bottom: 4rem;
+   margin-top: 3rem;
+ }
